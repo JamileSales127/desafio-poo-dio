@@ -4,20 +4,16 @@ import java.time.LocalDate;
 
 public class Mentoria extends Conteudo{
 
-  LocalDate data;
+  private LocalDate data;
 
-  public Mentoria() {
-  }
+
 
   @Override
   public double calcularXp() {
     return XP_PADRAO + 20d;
   }
 
-  public void adicionarCurso(String titulo, String descricao, LocalDate data){
-    this.setTitulo(titulo);
-    this.setDescricao(descricao);
-    this.data = data;
+  public Mentoria() {
   }
 
   public LocalDate getData() {

@@ -32,22 +32,24 @@ public class Main {
     Dev devJamile = new Dev();
     devJamile.setNome("Jamile");
     devJamile.inscreverBootcamp(bootcamp);
-    System.out.println("Conteúdos Inscritos Jamile " + devJamile.getConteudosInscritos());
+    System.out.println("Conteúdos Inscritos Camila:" + devJamile.getConteudosInscritos());
     devJamile.progredir();
-    System.out.println("--");
-    System.out.println("Conteúdos Inscritos Jamile " + devJamile.getConteudosInscritos());
-    System.out.println("Conteúdos Inscritos Jamile " + devJamile.getConteudosConcluidos());
+    System.out.println("-");
+    System.out.println("Conteúdos Inscritos Camila:" + devJamile.getConteudosInscritos());
+    System.out.println("Conteúdos Concluídos Camila:" + devJamile.getConteudosConcluidos());
+    System.out.println("XP:" + devJamile.calcularTotalXp());
 
-    System.out.println("------------------");
+    System.out.println("-------");
 
     Dev devLucas = new Dev();
-    devJamile.setNome("Lucas");
+    devLucas.setNome("Lucas");
     devLucas.inscreverBootcamp(bootcamp);
-    System.out.println("Conteúdos Inscritos Lucas " + devLucas.getConteudosConcluidos());
-    devJamile.progredir();
-    System.out.println("--");
-    System.out.println("Conteúdos Inscritos Jamile " + devLucas.getConteudosInscritos());
-    System.out.println("Conteúdos Inscritos Jamile " + devLucas.getConteudosConcluidos());
+    System.out.println("Conteúdos Inscritos João:" + devLucas.getConteudosInscritos());
+    devLucas.progredir();
+    System.out.println("-");
+    System.out.println("Conteúdos Inscritos João:" + devLucas.getConteudosInscritos());
+    System.out.println("Conteúdos Concluidos João:" + devLucas.getConteudosConcluidos());
+    System.out.println("XP:" + devLucas.calcularTotalXp());
 
   }
 }

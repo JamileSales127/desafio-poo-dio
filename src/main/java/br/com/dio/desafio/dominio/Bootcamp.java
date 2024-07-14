@@ -61,23 +61,14 @@ public class Bootcamp {
 
   @Override
   public boolean equals(Object o) {
-    if (this == o) {
-      return true;
-    }
-    if (!(o instanceof Bootcamp bootcamp)) {
-      return false;
-    }
-    return Objects.equals(getNome(), bootcamp.getNome()) && Objects.equals(
-        getDescricao(), bootcamp.getDescricao()) && Objects.equals(getDataInicial(),
-        bootcamp.getDataInicial()) && Objects.equals(getDataFinal(),
-        bootcamp.getDataFinal()) && Objects.equals(getDevsInscritos(),
-        bootcamp.getDevsInscritos()) && Objects.equals(getConteudos(),
-        bootcamp.getConteudos());
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Bootcamp bootcamp = (Bootcamp) o;
+    return Objects.equals(nome, bootcamp.nome) && Objects.equals(descricao, bootcamp.descricao) && Objects.equals(dataInicial, bootcamp.dataInicial) && Objects.equals(dataFinal, bootcamp.dataFinal) && Objects.equals(devsInscritos, bootcamp.devsInscritos) && Objects.equals(conteudos, bootcamp.conteudos);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(getNome(), getDescricao(), getDataInicial(), getDataFinal(),
-        getDevsInscritos(), getConteudos());
+    return Objects.hash(nome, descricao, dataInicial, dataFinal, devsInscritos, conteudos);
   }
 }
