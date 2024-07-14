@@ -6,8 +6,7 @@ public class Mentoria extends Conteudo{
 
   LocalDate data;
 
-  public Mentoria(String titulo, String descricao) {
-    super(titulo, descricao);
+  public Mentoria() {
   }
 
   @Override

@@ -22,11 +22,14 @@ public class Dev {
       this.conteudosConcluidos.add(conteudo.get());
       this.conteudosInscritos.remove(conteudo.get());
     }else {
-      System.err.println("Você não está matriculado em nenhum ocnteúdo.");
+      System.err.println("Você não está matriculado em nenhum conteúdo.");
     }
   }
-  public void calcularXp(){
-
+  public double calcularXp(){
+    return  this.conteudosConcluidos
+        .stream()
+        .mapToDouble(Conteudo::calcularXp)
+        .sum();
   }
 
   public Set<Conteudo> getConteudosInscritos() {
